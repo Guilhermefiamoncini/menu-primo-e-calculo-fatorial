@@ -1,0 +1,11 @@
+C:\Users\Usuario\source\repos\avaliação 5\bin\Debug\netcoreapp2.2\avaliação 5.deps.json
+C:\Users\Usuario\source\repos\avaliação 5\bin\Debug\netcoreapp2.2\avaliação 5.runtimeconfig.json
+C:\Users\Usuario\source\repos\avaliação 5\bin\Debug\netcoreapp2.2\avaliação 5.runtimeconfig.dev.json
+C:\Users\Usuario\source\repos\avaliação 5\bin\Debug\netcoreapp2.2\avaliação 5.dll
+C:\Users\Usuario\source\repos\avaliação 5\bin\Debug\netcoreapp2.2\avaliação 5.pdb
+C:\Users\Usuario\source\repos\avaliação 5\obj\Debug\netcoreapp2.2\avaliação 5.csprojAssemblyReference.cache
+C:\Users\Usuario\source\repos\avaliação 5\obj\Debug\netcoreapp2.2\avaliação 5.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\avaliação 5\obj\Debug\netcoreapp2.2\avaliação 5.AssemblyInfoInputs.cache
+C:\Users\Usuario\source\repos\avaliação 5\obj\Debug\netcoreapp2.2\avaliação 5.AssemblyInfo.cs
+C:\Users\Usuario\source\repos\avaliação 5\obj\Debug\netcoreapp2.2\avaliação 5.dll
+C:\Users\Usuario\source\repos\avaliação 5\obj\Debug\netcoreapp2.2\avaliação 5.pdb
