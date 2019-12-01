@@ -5,6 +5,8 @@ using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
+
 
 
 namespace Exercicio1
@@ -79,6 +81,40 @@ namespace Exercicio1
             return numeroLido;
         }
 
+        static ulong LerInteiroPositivogrande()
+        {
+            ulong numeroLido = 0;
+            Boolean lerNumero = true;
+            Boolean numeroValido = true;
+
+            while (lerNumero == true)
+            {
+                try
+                {
+                    numeroLido = Convert.ToUInt64(Console.ReadLine());
+                    numeroValido = true;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Valor inválido, favor informar somente números inteiros positivos");
+                    numeroValido = false;
+                }
+
+                if (numeroValido == true)
+                {
+                    if (numeroLido > 0)
+                    {
+                        lerNumero = false;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Número inválido, favor informar somente números inteiros positivos");
+                    }
+                }
+            }
+
+            return numeroLido;
+        }
         static void MontarMenu(String[] opcoes, Action[] acoes)
         {
             if (opcoes.Length > 0)
@@ -171,7 +207,7 @@ namespace Exercicio1
         }
 
 
-        static Int32 calcularfatorial(Int32 numero)
+        static ulong calcularfatorial(ulong numero)
         {
             if (numero < 2)
             {
@@ -183,19 +219,20 @@ namespace Exercicio1
         static void fatorial()
         {
             Console.WriteLine("informe um numero");
-            Int32 num = LerInteiroPositivo();
-            Int32 fat = calcularfatorial(num);
+            ulong num = LerInteiroPositivogrande();
+            ulong fat = calcularfatorial(num);
 
-            Console.WriteLine("o fatorial de {0} é {1}",num, fat);
-             onfatorial.Invoke(null, new LogEventArgs()
-                {
-                    DataHora = DateTime.Now,
-                    Mensagem = string.Format("o fatorial do número {0} é igual a {1}",num,fat)
+            CultureInfo elGR = CultureInfo.CreateSpecificCulture("el-GR");
+            Console.WriteLine(string.Format("o fatorial de {0} é {1:0,0}", num, fat));
+            onfatorial.Invoke(null, new LogEventArgs()
+            {
+                DataHora = DateTime.Now,
+                Mensagem = string.Format("o fatorial do número {0} é igual a {1:0,0}", num, fat)
 
-                });
+            });
         }
-    
- 
+
+
 
         static void Main(string[] args)
         {
